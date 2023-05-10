@@ -85,10 +85,14 @@ body {
     left: calc(50% - 33px);
 }
 
+/* HEADER */
+
 .header {
+    box-sizing: border-box;
     height: 450px;
     display: flex;
     flex-direction: column;
+    padding: 29px 0;
 
     background-color: #767e77;
     background-image: url("../images/banner-bg.jpg");
@@ -101,11 +105,12 @@ body {
     opacity: 0.6;
 }
 
-.header__top {
-    padding: 29px 245px;
+.header__header {
+    padding: 0 245px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo__image {
@@ -113,16 +118,19 @@ body {
 }
 
 .banner {
-    padding: 0 490px;
-    margin: auto 0;
+    width: 43%;
+    margin: auto auto;
 
     text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
     line-height: 75px;
     color: #ffffff;
     font-size: 45px;
     font-weight: bold;
 }
+
+/* MENU */
 
 .menu__list {
     display: flex;
@@ -158,32 +166,166 @@ body {
 
 .popup__container {
     position: relative;
+    box-sizing: border-box;
 
     width: 391px;
     height: 589px;
+
+    padding: 50px 30px;
 
     background-color: #ffffff;
     margin: auto;
 }
 
-.btn-close {
-    position: absolute;
-    top: -20px;
-    right: 0;
+.popup__close {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  height: 19px;
+  width: 19px;
 
-    color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-indent: -9999px;
+  cursor: pointer;  
 }
+
+.popup__close:before, .popup__close:after {
+  content: "";
+  height: 3px;
+  width: 24px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.popup__close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup__close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* SURVEY */
+
+.survey {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey__header {
+    margin-bottom: 40px;
+}
+
+.survey__form {
+    font-size: 13px;
+}
+
+.survey__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.frequency-block {
+    margin-bottom: 29px;
+}
+
+.is-subscribed-block {
+    margin-bottom: 33px;
+}
+
+.topics-block {
+    margin-bottom: 25px;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    gap: 16px;
+}
+
+.survey__select,
+.survey__textarea {
+    background-color: #f4f7f6;
+    border: none;
+    opacity: 0.54;
+    color: #000000;
+}
+
+.survey__select {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 14px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.survey__select::after {
+    content: "qq";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    background-image: url("../svg/form-arrows.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.survey__textarea {
+    box-sizing: bprder-box;
+    height: 90px;
+    padding: 20px;
+    
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #b59f5b;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 19px;
+}
+
+.survey__button {
+    width: 100%;
+    position : relative;
+}
+
+.survey__radio {
+    position: relative;
+    padding-left: 21px;
+}
+
+.survey__radio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.survey__radio:checked::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+/* */
 
 .wrapper {
     width: 1169px;
     margin: 0 auto;
     padding-top: 64px;
-}
-
-.blog {
-    display: flex;
-    gap: 125px;
-    justify-content: space-between;
 }
 
 .trends__container {
@@ -193,7 +335,7 @@ body {
 }
 
 .trends__header {
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 40px;
 }
 
@@ -213,10 +355,6 @@ body {
 
 }
 
-.trend_image {
-    width: 100%;
-}
-
 .trend__background::after {
     z-index: auto;
     background-color: #000000;
@@ -226,15 +364,23 @@ body {
 .trend__text {
     box-sizing: border-box;
     position: absolute;
-    left: 21px;
-    right: 21px;
-    bottom: 12px;
+    left: 20px;
+    right: 20px;
+    bottom: 16px;
 
     border: 3px solid #b59f5b;
     display:flex;
     flex-direction: column;
-    padding: 36px;
+    padding: 37px;
 }
+
+
+.blog {
+    display: flex;
+    gap: 125px;
+    justify-content: space-between;
+}
+
 
 /* POST */
 
@@ -265,14 +411,20 @@ body {
     text-transform: uppercase;
 }
 
+.post__heading {
+    margin-bottom: 35px;
+}
+
 .post__info {
     display: flex;
+    margin-bottom: 50px;
 
     font-size: 12px;
 }
 
 .post__date {
     color: #888888;
+    margin-right: 10px;
 }
 
 .post__author {
@@ -284,14 +436,20 @@ body {
     line-height: 22px;
 }
 
+/* SIDEBAR */
+
 .sidebar {
     width: 271px;
+}
+
+.sidebar__block {
+    margin-bottom: 55px;
 }
 
 /* LATEST */
 
 .latest-post__header {
-    margin-bottom: 46px;
+    margin-bottom: 40px;
 }
 
 .latest-posts__list-item {
@@ -317,6 +475,77 @@ body {
     font-size: 12px;
 }
 
+.input-field {
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.subscription__header {
+    margin-bottom: 35px;
+}
+
+.subscription__field {
+    margin-bottom: 15px;
+}
+
+/* TAGS */
+
+.tags-block__header {
+    margin-bottom: 35px;
+}
+
+.tags-block__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags-block__item {
+    box-sizing: border-box;
+    padding: 5px 16px;
+    
+    border: 2px solid #b59f5b;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-right: 5px;
+}
+
+.topic-block__header {
+    margin-bottom: 25px;
+}
+
+.topic-block__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-block__item {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+    height: 47px;
+    padding-top: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topic-block__item::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #b59f5b;
+    bottom: 0;
+}
+
+.topic-block__counter {
+    position: relative;
+    font-size: 14px;
+    top: -4px;
+}
+
 /* SHOP */
 .shop-list {
     display: flex;
@@ -329,6 +558,7 @@ body {
 
 .shop-list__item {
     position: relative;
+    box-sizing: border-box;
     width: 348px;
     display: flex;
     flex-direction: column;
@@ -349,7 +579,7 @@ body {
 }
 
 .shop-list__product-block {
-    padding: 57px 25px 30px;
+    padding: 47px 25px 30px;
     border: 3px solid #b59f5b;
 
     height: 100%;
