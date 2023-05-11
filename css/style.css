@@ -85,6 +85,13 @@ body {
     left: calc(50% - 33px);
 }
 
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    height: 20px;
+}
+
 /* HEADER */
 
 .header {
@@ -113,6 +120,11 @@ body {
     align-items: center;
 }
 
+.header__menu {
+    max-width: 462px;
+    width: 100%;
+}
+
 .logo__image {
     width: 179px;
 }
@@ -134,8 +146,9 @@ body {
 
 .menu__list {
     display: flex;
-    gap: 35px;
-
+    width: 100%;
+    justify-content: space-between;
+    
     font-size: 13px;
     text-transform: uppercase;
     color: #ffffff;
@@ -361,6 +374,10 @@ body {
     opacity: 0.6;
 }
 
+.trend__tags {
+    margin-bottom: 7px;
+}
+
 .trend__text {
     box-sizing: border-box;
     position: absolute;
@@ -371,7 +388,10 @@ body {
     border: 3px solid #b59f5b;
     display:flex;
     flex-direction: column;
-    padding: 37px;
+    padding-top: 37px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 33px;
 }
 
 
@@ -411,13 +431,17 @@ body {
     text-transform: uppercase;
 }
 
+.post__tags {
+    margin-bottom: 7px;
+}
+
 .post__heading {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .post__info {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 
     font-size: 12px;
 }
@@ -579,13 +603,66 @@ body {
 }
 
 .shop-list__product-block {
-    padding: 47px 25px 30px;
+    padding: 47px 20px 30px;
     border: 3px solid #b59f5b;
 
     height: 100%;
 }
 
+.shop-list__title {
+    margin-bottom: 5px;
+}
+
+.shop-list__description {
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.shop-list__buy {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.shop-list__price {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 5px;
+}
+
+.shop-list__old-price {
+    position: absolute;
+    bottom: 26px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.shop-list__btn {
+    box-sizing: border-box;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 27px;
+}
+
 .social-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 83px;
     background-color: #f4f7f6;
+}
+
+.copyright {
+    box-sizing: border-box;
+    height: 130px;
+    padding-top: 67px;
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
 }
