@@ -12,30 +12,30 @@
 
 <body>
 
-  <div class="main-container">
-
-    <div class="header masked">
+  <div class="header masked">
+    <div class="main-container">
       <header class="header__header">
-        <div class="header__logo">
+        <div class="logo header__logo">
           <img class="logo__image" src="svg/noemi-logo.svg" alt="NOEMI logo">
         </div>
-        <nav class="header__menu menu">
+        <nav class="menu header__menu">
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="">Главная</a></li>
-            <li class="menu__item"><a class="menu__link" href="">посты</a></li>
-            <li class="menu__item"><a class="menu__link" href="">статьи</a></li>
-            <li class="menu__item"><a class="menu__link" href="">теги</a></li>
-            <li class="menu__item"><a class="menu__link" href="">темы</a></li>
-            <li class="menu__item"><a class="menu__link" href="">контакты</a></li>
+            <li class="menu__item"><a class="link" href="#">Главная</a></li>
+            <li class="menu__item"><a class="link" href="#">посты</a></li>
+            <li class="menu__item"><a class="link" href="#">статьи</a></li>
+            <li class="menu__item"><a class="link" href="#">теги</a></li>
+            <li class="menu__item"><a class="link" href="#">темы</a></li>
+            <li class="menu__item"><a class="link" href="#">контакты</a></li>
           </ul>
         </nav>
       </header>
-      <div class="banner">
+      <h1 class="title">
         Блог о творчестве, спорте,
         и образе жизни
-      </div>
+      </h1>
     </div>
-
+  </div>
+  <div class="main-container">
     <section class="trends">
       <header class="trends__header">
         <h2 class="heading2 heading_decorative">сейчас в тренде</h2>
@@ -46,12 +46,15 @@
             <img class="trend__image" src="images/trend1.jpg">
           </div>
           <div class="trend__text">
-            <div class="tags trend__tags">
-              <div class="tag_item">Lifestyle</div>
-              <div class="tag_item">interior</div>
-            </div>
-            <h2 class="heading2 heading__trend">Сейчас в тренде: сад
-              на подоконнике</h2>
+            <ul class="tags trend__tags">
+              <li class="tags__item"><a class="link" href="#">Lifestyle</a></li>
+              <li class="tags__item"><a class="link" href="#">interior</a></li>
+              <li class="tags__item"><a class="link" href="#">interior</a></li>
+              <li class="tags__item"><a class="link" href="#">health</a></li>
+              <li class="tags__item"><a class="link" href="#">food</a></li>
+            </ul>
+            <h2 class="heading2 trend__heading"><a href="#" class="link">Сейчас в тренде: сад
+                на подоконнике</a></h2>
           </div>
         </div>
         <div class="trend">
@@ -59,12 +62,12 @@
             <img class="trend__image" src="images/trend2.jpg">
           </div>
           <div class="trend__text">
-            <div class="tags trend__tags">
-              <div class="tag_item">food</div>
-            </div>
-            <h2 class="heading2 heading__trend">сыры на красивых
-              картинках из интернета:
-              какие они на вкус?</h2>
+            <ul class="tags trend__tags">
+              <li class="tags__item"><a class="link" href="#">food</a></li>
+            </ul>
+            <h2 class="heading2 trend__heading"><a href="#" class="link">сыры на красивых
+                картинках из интернета:
+                какие они на вкус?</a></h2>
           </div>
         </div>
         <div class="trend">
@@ -73,11 +76,11 @@
           </div>
           <div class="trend__text">
             <div class="tags trend__tags">
-              <div class="tag_item">Lifestyle</div>
-              <div class="tag_item">traval</div>
+              <div class="tags__item"><a class="link" href="#">Lifestyle</a></div>
+              <div class="tags__item"><a class="link" href="#">travel</a></div>
             </div>
-            <h2 class="heading2 heading__trend">СОБИРАЕМСЯ В ПЕРВЫЙ
-              ПОХОД В ГОРЫ</h2>
+            <h2 class="heading2 trend__heading"><a href="#" class="link">СОБИРАЕМСЯ В ПЕРВЫЙ
+                ПОХОД В ГОРЫ</a></h2>
           </div>
         </div>
         <div class="trend">
@@ -86,11 +89,11 @@
           </div>
           <div class="trend__text">
             <div class="tags trend__tags">
-              <div class="tag_item">food</div>
-              <div class="tag_item">health</div>
+              <div class="tags__item"><a class="link" href="#">food</a></div>
+              <div class="tags__item"><a class="link" href="#">health</a></div>
             </div>
-            <h2 class="heading2 heading__trend">Сейчас в тренде: сКОЛЬКО
-              ВИТАМИНА c В ЛИМОНАХ?</h2>
+            <h2 class="heading2 trend__heading"><a href="#" class="link">Сейчас в тренде: сКОЛЬКО
+                ВИТАМИНА c В ЛИМОНАХ?</a></h2>
           </div>
         </div>
       </div>
@@ -99,16 +102,18 @@
     <section class="blog wrapper">
       <main class="posts">
         <article class="post">
-          <img class="post__image" src="images/last-post1.jpg">
+          <div class="post__image">
+            <img class="post__image" src="images/last-post1.jpg">
+          </div>
           <div class="post__block">
             <header>
-              <div class="tags post__tags">
-                <div class="tag">travel</div>
-                <div class="tag">health</div>
-              </div>
+              <ul class="tags post__tags">
+                <li class="tags__item"><a class="link" href="#">travel</a></li>
+                <li class="tags__item"><a class="link" href="#">health</a></li>
+              </ul>
               <h2 class="heading2 post__heading">
-                10 мест, ради которых стоит
-                проснуться на рассвете
+                <a href="#" class="link">10 мест, ради которых стоит
+                  проснуться на рассвете</a>
               </h2>
               <div class="post__info">
                 <div class="post__date">
@@ -128,16 +133,18 @@
         </article>
 
         <article class="post">
-          <img class="post__image" src="images/last-post2.jpg">
+          <div class="post__image">
+            <img class="post__image" src="images/last-post2.jpg">
+          </div>
           <div class="post__block">
             <header>
-              <div class="tags post__tags">
-                <div class="tag">health</div>
-                <div class="tag">lifestyle</div>
-              </div>
+              <ul class="tags post__tags">
+                <li class="tags__item"><a class="link" href="#">health</a></li>
+                <li class="tags__item"><a class="link" href="#">lifestyle</a></li>
+              </ul>
               <h2 class="heading2 post__heading">
-                ЙОга для начинающих в
-                домашних условиях
+                <a href="#" class="link">ЙОга для начинающих в
+                  домашних условиях</a>
               </h2>
               <div class="post__info">
                 <div class="post__date">
@@ -156,15 +163,18 @@
         </article>
 
         <article class="post">
-          <img class="post__image" src="images/last-post3.jpg">
+          <div class="post__image">
+            <img class="post__image" src="images/last-post3.jpg">
+          </div>
+
           <div class="post__block">
             <header>
-              <div class="tags post__tags">
-                <div class="tag">music</div>
-              </div>
+              <ul class="tags post__tags">
+                <li class="tags__item"><a class="link" href="#">music</a></li>
+              </ul>
               <h2 class="heading2 post__heading">
-                Лучшие музыкальные
-                фестивали этого лета
+                <a href="#" class="link">Лучшие музыкальные
+                  фестивали этого лета</a>
               </h2>
               <div class="post__info">
                 <div class="post__date">
@@ -184,16 +194,18 @@
         </article>
 
         <article class="post">
-          <img class="post__image" src="images/last-post4.jpg">
+          <div class="post__image">
+            <img class="post__image" src="images/last-post4.jpg">
+          </div>
           <div class="post__block">
             <header>
-              <div class="tags post__tags">
-                <div class="tag">lifestyle</div>
-                <div class="tag">food</div>
-              </div>
+              <ul class="tags post__tags">
+                <li class="tags__item"><a class="link" href="#">lifestyle</a></li>
+                <li class="tags__item"><a class="link" href="#">food</a></li>
+              </ul>
               <h2 class="heading2 post__heading">
-                Наукоёмкий подход к
-                кулинарии
+                <a class="link" href="#">Наукоёмкий подход к
+                  кулинарии</a>
               </h2>
               <div class="post__info">
                 <div class="post__date">
@@ -212,17 +224,19 @@
         </article>
 
         <article class="post">
-          <img class="post__image" src="images/last-post5.jpg">
+          <div class="post__image">
+            <img class="post__image" src="images/last-post5.jpg">
+          </div>
           <div class="post__block">
             <header>
-              <div class="tags post__tags">
-                <div class="tag">lifestyle</div>
-                <div class="tag">interior</div>
-                <div class="tag">art</div>
-              </div>
+              <ul class="tags post__tags">
+                <li class="tags__item"><a class="link" href="#">lifestyle</a></li>
+                <li class="tags__item"><a class="link" href="#">interior</a></li>
+                <li class="tags__item"><a class="link" href="#">art</a></li>
+              </ul>
               <h2 class="heading2 post__heading">
-                делаем модные принты на
-                подушках для интерьера
+                <a href="#" class="link">делаем модные принты на
+                  подушках для интерьера</a>
               </h2>
               <div class="post__info">
                 <div class="post__date">
@@ -241,6 +255,7 @@
           </div>
         </article>
       </main>
+
       <aside class="sidebar">
         <section class="sidebar__block sidebar__latest latest-posts">
           <div class="latest-post__header">
@@ -253,68 +268,73 @@
               <img class="latest-posts__list-image" src="images/last-post1.jpg" alt="">
               <div class="latest-posts__list-data">
                 <div class="latest-posts__list-date">14 июня 2019</div>
-                <div class="latest-posts__list-title heading3">10 мест, ради которых
-                  стоит проснуться</div>
+                <div class="latest-posts__list-title heading3"><a href="#" class="link">10 мест, ради которых
+                    стоит проснуться</a></div>
               </div>
             </div>
             <div class="latest-posts__list-item">
               <img class="latest-posts__list-image" src="images/last-post1.jpg" alt="">
               <div class="latest-posts__list-data">
                 <div class="latest-posts__list-date">14 июня 2019</div>
-                <div class="latest-posts__list-title heading3">Йога для домашних</div>
+                <div class="latest-posts__list-title heading3"><a class="link" href="#">Йога для домашних</a></div>
               </div>
             </div>
             <div class="latest-posts__list-item">
               <img class="latest-posts__list-image" src="images/last-post1.jpg" alt="">
               <div class="latest-posts__list-data">
                 <div class="latest-posts__list-date">14 июня 2019</div>
-                <div class="latest-posts__list-title heading3">как мы превратили
-                  классное место в
-                  балкон</div>
+                <div class="latest-posts__list-title heading3"><a class="link" href="#">как мы превратили
+                    классное место в
+                    балкон</a></div>
               </div>
             </div>
             <div class="latest-posts__list-item">
               <img class="latest-posts__list-image" src="images/last-post1.jpg" alt="">
               <div class="latest-posts__list-data">
                 <div class="latest-posts__list-date">14 июня 2019</div>
-                <div class="latest-posts__list-title heading3">Кулинарный подход
-                  к науке</div>
+                <div class="latest-posts__list-title heading3"><a class="link" href="#">Кулинарный подход
+                    к науке</a></div>
               </div>
             </div>
             <div class="latest-posts__list-item">
               <img class="latest-posts__list-image" src="images/last-post1.jpg" alt="">
               <div class="latest-posts__list-data">
                 <div class="latest-posts__list-date">14 июня 2019</div>
-                <div class="latest-posts__list-title heading3">лучшие прически для
-                  распущенных волос</div>
+                <div class="latest-posts__list-title heading3"><a class="link" href="#">лучшие прически для
+                    распущенных волос</a></div>
               </div>
             </div>
           </div>
         </section>
+
         <div class="sidebar__block search-block">
-          <input class="input-field" type="search" name="search" id="">
-          <button class="button">Find</button>
+          <form>
+          <input class="input-field" type="search" name="search" id="" placeholder="Найти...">
+          </form>
         </div>
         <div class="sidebar__block subscription-block">
           <div class="heading3 heading_decorative subscription__header">Рассылка</div>
-          <input class="input-field subscription__field" type="text">
-          <button class="button">Подписаться</button>
+          <form>
+          <input class="input-field subscription__input" type="text" placeholder="Ваш e-mail-адрес">
+          <button class="button subscription__btn">Подписаться</button>
+          </form>
         </div>
         <div class="sidebar__block sidebar__tags tags-block">
           <div class="tags-block__header heading3 heading_decorative">
             Теги
           </div>
-          <div class="tags-block__list">
-            <div class="tags-block__item">fashion</div>
-            <div class="tags-block__item">music</div>
-            <div class="tags-block__item">lifestyle</div>
-            <div class="tags-block__item">art</div>
-            <div class="tags-block__item">interior</div>
-            <div class="tags-block__item">travel</div>
-            <div class="tags-block__item">food</div>
-            <div class="tags-block__item">health</div>
-          </div>
+          <ul class="tags-block__list">
+            <li class="tags-block__item"><a class="tags-block__link" href="#">fashion</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">music</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">lifestyle</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">art</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">interior</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">travel</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">food</a></li>
+            <li class="tags-block__item"><a class="tags-block__link" href="#">health</a></li>
+          </ul>
         </div>
+
         <div class="sidebar__block topic-block">
           <div class="topic-block__header heading3 heading_decorative">
             Темы
@@ -322,7 +342,7 @@
           <div class="topic-block__list">
             <div class="topic-block__item">
               <div class="topic-block__name">
-                Красота
+                <a class="link" href="#">Красота</a>
               </div>
               <div class="topic-block__counter">
                 12
@@ -330,7 +350,7 @@
             </div>
             <div class="topic-block__item">
               <div class="topic-block__name">
-                Здоровье
+                <a class="link" href="#">Здоровье</a>
               </div>
               <div class="topic-block__counter">
                 4
@@ -338,7 +358,7 @@
             </div>
             <div class="topic-block__item">
               <div class="topic-block__name">
-                Образ жизни
+                <a class="link" href="#">Образ жизни</a>
               </div>
               <div class="topic-block__counter">
                 145
@@ -346,7 +366,7 @@
             </div>
             <div class="topic-block__item">
               <div class="topic-block__name">
-                Музыка
+                <a class="link" href="#">Музыка</a>
               </div>
               <div class="topic-block__counter">
                 28
@@ -354,7 +374,7 @@
             </div>
             <div class="topic-block__item">
               <div class="topic-block__name">
-                Спорт
+                <a class="link" href="#">Спорт</a>
               </div>
               <div class="topic-block__counter">
                 62
@@ -362,7 +382,7 @@
             </div>
             <div class="topic-block__item">
               <div class="topic-block__name">
-                Йога
+                <a class="link" href="#">Йога</a>
               </div>
               <div class="topic-block__counter">
                 8
@@ -379,7 +399,7 @@
       </header>
       <div class="shop-list">
         <div class="shop-list__item">
-          <div class="shop-list__image-block">
+          <div class="shop-list__image-block shop-list__image">
             <img src="images/shop-item-desk1.jpg" alt="" class="shop-list__image">
           </div>
           <div class="shop-list__product-block">
@@ -387,7 +407,7 @@
               подушки на диван
             </div>
             <div class="shop-list__description">
-              Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.
+              Набор из двух подушек с модными принтами. Видео о создании <a class="link shop__link" href="#">здесь</a>.
             </div>
             <div class="shop-list__buy">
               <div class="shop-list__price">
@@ -396,14 +416,16 @@
                   1000
                 </div>
               </div>
-              <button class="shop-list__btn">
+              <div class="button">
+              <a class="shop-list__btn">
                 В магазин
-              </button>
+              </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="shop-list__item">
-          <div class="shop-list__image-block">
+          <div class="shop-list__image-block shop-list__image">
             <img src="images/shop-item-desk2.jpg" alt="" class="shop-list__image">
           </div>
           <div class="shop-list__product-block">
@@ -418,14 +440,16 @@
               <div class="shop-list__price">
                 3500
               </div>
-              <button class="shop-list__btn">
+              <div class="button">
+              <a class="shop-list__btn">
                 В магазин
-              </button>
+              </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="shop-list__item">
-          <div class="shop-list__image-block">
+          <div class="shop-list__image-block shop-list__image">
             <img src="images/shop-item-desk3.jpg" alt="" class="shop-list__image">
           </div>
           <div class="shop-list__product-block">
@@ -433,7 +457,7 @@
               Шестиугольная рамка
             </div>
             <div class="shop-list__description">
-              Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных средств за 30
+              Необычная рамка для украшения дома из видео <a class="link shop__link" href="#">«Как сделать рамку из подручных средств за 30
                 минут»</a>
             </div>
             <div class="shop-list__buy">
@@ -443,9 +467,11 @@
                   500
                 </div>
               </div>
-              <button class="shop-list__btn">
+              <div class="button">
+              <a class="shop-list__btn">
                 В магазин
-              </button>
+              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -454,14 +480,15 @@
 
     <footer class="footer wrapper">
       <div class="social-block">
-        <div class="socials">
-          <img src="/svg/001-dribbble.svg" alt="" class="socials__icon">
-          <img src="/svg/001-pinterest.svg" alt="" class="socials__icon">
-          <img src="/svg/003-tumblr.svg" alt="" class="socials__icon">
-        </div>
+        <ul class="socials">
+          <li class="socials__item"><a href="#" class="link"><img src="/svg/001-dribbble.svg" alt="" class="socials__icon"></a></li>
+          <li class="socials__item"><a href="#" class="link"><img src="/svg/001-pinterest.svg" alt="" class="socials__icon"></a></li>
+          <li class="socials__item"><a href="#" class="link"><img src="/svg/003-tumblr.svg" alt="" class="socials__icon"></a></li>
+        </ul>
       </div>
       <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
     </footer>
+
   </div>
 
   <div class="popup masked">
@@ -472,17 +499,17 @@
           <h2 class="heading2 heading_decorative">Ваш фидбек</h2>
         </header>
         <form action="post" class="survey__form">
-          
+
           <div class="survey__column frequency-block">
             <span class="label">
               Как часто вы заходите на сайт?
             </span>
-              <select name="frequency" class="survey__select">
-                <option>Почти каждый день</option>
-                <option>Раз в несколько дней</option>
-                <option>Раз в несколько недель</option>
-                <option>Несколько раз в год</option>
-              </select>
+            <select name="frequency" class="survey__select">
+              <option>Почти каждый день</option>
+              <option>Раз в несколько дней</option>
+              <option>Раз в несколько недель</option>
+              <option>Несколько раз в год</option>
+            </select>
           </div>
 
           <div class="survey__column is-subscribed-block">
@@ -490,8 +517,10 @@
               Вы подписаны на e-mail рассылку?
             </label>
             <div class="options">
-              <radio class="survey__radio" name="is_subscribed" value="yes">Да</radio>
-              <radio class="survey__radio" name="is_subscribed" value=""no>Нет</radio>
+              <label class="radio-group">
+              <input type="radio" class="radio" name="is_subscribed" value="yes"><span class="radio__text">Да</span></label>
+              <label class="radio-group">
+                <input type="radio" class="radio" name="is_subscribed" value="no"><span class="radio__text">Нет</span></label>
             </div>
           </div>
 
@@ -500,7 +529,7 @@
               Расскажите, какой контент вы хотели бы видеть
               на нашем сайте?
             </label>
-              <textarea class="survey__textarea" placeholder="Может, больше рецептов?"></textarea>
+            <textarea class="survey__textarea" placeholder="Может, больше рецептов?"></textarea>
           </div>
           <button class="survey__button button">Отправить</button>
         </form>
