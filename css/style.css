@@ -19,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,6 +31,14 @@ body {
   max-width: 1660px;
   width: 100%;
   margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1237px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .heading2 {
@@ -180,6 +189,7 @@ body {
 
 .header__header {
   width: 70%;
+  min-width: 700px;
   margin: 0 auto;
 
   display: flex;
@@ -194,6 +204,7 @@ body {
 .title {
   box-sizing: border-box;
   width: 43%;
+  min-width: 620px;
   margin: auto auto;
   padding: 100px 0;
 
@@ -410,13 +421,9 @@ body {
 
 /* */
 
-.wrapper {
-  width: 1169px;
-  margin: 0 auto;
-}
-
 .trends__container {
   display: flex;
+  flex-wrap: wrap;
 
   justify-content: space-between;
 }
@@ -428,8 +435,10 @@ body {
 
 .trend {
   position: relative;
-
+  width: calc((100% - 3px) / 4);
+  min-width: calc(768px / 2);
   overflow: hidden;
+  margin-bottom: 1px;
 }
 
 .trend__background {
@@ -510,17 +519,20 @@ body {
 
 .blog {
   display: flex;
-  padding-top: 60px;
-  gap: 125px;
   justify-content: space-between;
+
+  padding-top: 60px;
 }
 
 
 /* POST */
 
+.posts {
+  flex-basis: 762px;
+}
+
 .post {
   display: flex;
-  width: 762px;
   margin-bottom: 60px;
 }
 
@@ -579,7 +591,7 @@ body {
 /* SIDEBAR */
 
 .sidebar {
-  width: 271px;
+  flex-basis: 270px;
 }
 
 .sidebar__block {
@@ -735,6 +747,7 @@ body {
 }
 .shop-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
