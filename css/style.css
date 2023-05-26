@@ -1250,8 +1250,8 @@ body {
 
   .shop-list__image {
     top: -198px;
-    max-width: 295px;
-    max-height: 230px;
+    width: 295px;
+    height: 230px;
   }
 
   .shop-list__product-block {
