@@ -1650,5 +1650,5 @@ body {
 }
 
 ._hidden {
-  display: flex;
+  display: none;
 }
