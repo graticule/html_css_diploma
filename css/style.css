@@ -548,14 +548,14 @@ body {
   flex-direction: column;
   align-items: center;
   align-self: stretch;
+
+  margin-top: -32px;
 }
 
 .shop-list__image {
-  position: absolute;
+  position: relative;
+  top: 32px;
   z-index: -1;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .shop-list__buy {
@@ -924,12 +924,10 @@ body {
 
   .shop-list__item {
     width: 100%;
-    margin-top: 257px;
     margin-bottom: 23px;
   }
 
   .shop-list__image {
-    top: -257px;
     width: 285px;
     height: 285px;
   }
@@ -955,17 +953,17 @@ body {
     padding-bottom: 5px;
   }
 
-  .shop-item1 {
+  /* .shop-item1 {
     background-image: url("../images/shop-item-mobile1.jpg");
-  }
+  } */
 
-  .shop-item2 {
+  /* .shop-item2 {
     background-image: url("../images/shop-item-mobile2.jpg");
-  }
+  } */
 
-  .shop-item3 {
+  /* .shop-item3 {
     background-image: url("../images/shop-item-mobile3.jpg");
-  }
+  } */
 
   /* mobile footer */
 
@@ -1244,12 +1242,10 @@ body {
 
   .shop-list__item {
     width: calc((100% - 20px) / 2);
-    margin-top: 198px;
     margin-bottom: 22px;
   }
 
   .shop-list__image {
-    top: -198px;
     width: 295px;
     height: 230px;
   }
@@ -1275,7 +1271,7 @@ body {
     padding-bottom: 5px;
   }
 
-  .shop-item1 {
+  /* .shop-item1 {
     background-image: url("../images/shop-item-tablet1.jpg");
   }
 
@@ -1285,7 +1281,7 @@ body {
 
   .shop-item3 {
     background-image: url("../images/shop-item-tablet3.jpg");
-  }
+  } */
 
   /* tablet footer */
 
@@ -1542,12 +1538,10 @@ body {
   }
 
   .shop-list__item {
-    width: 348px;
-    margin-top: 173px;
+    width: calc(89% / 3);
   }
 
   .shop-list__image {
-    top: -173px;
     width: 300px;
     height: 205px;
   }
@@ -1572,7 +1566,7 @@ body {
     padding-bottom: 5px;
   }
 
-  .shop-item1 {
+  /* .shop-item1 {
     background-image: url("../images/shop-item-desk1.jpg");
   }
 
@@ -1582,7 +1576,7 @@ body {
 
   .shop-item3 {
     background-image: url("../images/shop-item-desk3.jpg");
-  }
+  } */
 
   /* desktop footer */
 
