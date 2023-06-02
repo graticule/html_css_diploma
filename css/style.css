@@ -1115,7 +1115,7 @@ body {
 
   .header__header {
     width: 70%;
-    min-width: 700px;
+    min-width: 620px;
     justify-content: space-between;
     align-items: center;
   }
