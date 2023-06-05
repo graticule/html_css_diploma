@@ -595,11 +595,8 @@ body {
 }
 
 .shop-list__btn {
-  height: 49px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 0 27px;
+  padding-left: 27px;
+  padding-right: 27px;
 
   cursor: pointer;
 }
